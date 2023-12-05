@@ -20,12 +20,13 @@ Deskripsi : Sebuah aplikasi menampilkan persebaran titik wisata olahraga di Kabu
 
 ## Tab
   - Home
-      
+      ![alt text](https://github.com/ampasgede/responsi/blob/main/data/Home.png?raw=true)
 
   - Add Data
-
-  - List Data
-
+      ![alt text](https://github.com/ampasgede/responsi/blob/main/data/adddata.png?raw=true)
+    
+  - Map
+        ![alt text](https://github.com/ampasgede/responsi/blob/main/data/map.png?raw=true)
   - Profile
-
+      ![alt text]( https://github.com/ampasgede/responsi/blob/main/data/profil.png?raw=true)
 
