@@ -51,7 +51,7 @@ function ProfilScreen(){
             <Text style={styles.profil}>Nama : Akhmad Faisal Zein</Text>
             <Text style={styles.profil}>NIM : 21/477782/SV/19212</Text>
             <Text style={styles.profil}>Instagram :_faisalzein_</Text>
-            <Text style={styles.profil}>Github : ampasgede</Text>
+            <Text style={styles.profil}>Linkedin : akhmadfaisal</Text>
         </ScrollView>
     )
 }
@@ -79,10 +79,13 @@ function HomeScreen() {
             <Text style={styles.caption}> 5. App Script</Text>
             <Text style={styles.caption}> 6. Awesome</Text>
             <Text style={styles.caption}> 7. Github </Text>
+            <Text style={styles.caption}> 8. Basemap : OpenStreetMap </Text>
 
-            
-
-
+            <Text style={styles.caption}>
+            Catatan tambahan : Data yang telah diinput dari form tidak bisa langsung
+            terinput ke maps karena terdapat masalah dari aplikasi sehingga data yang
+            akan tertampil pada peta harus menunggu update kedepannya.
+                 </Text>
         </ScrollView>
         
     )
@@ -99,8 +102,8 @@ function MyTabs() {
   return (
     <NavigationContainer>
             <Tab.Navigator>
-      <Tab.Screen name="HomeScreen" component={HomeScreen} options={{
-	tabBarLabel: 'Homescreen',
+      <Tab.Screen name="Home" component={HomeScreen} options={{
+	tabBarLabel: 'Home',
 	tabBarIcon: ({ color, size }) => (
   		<Fontawesome5 name="home" color={color} size={size} />
 	),
@@ -117,7 +120,7 @@ function MyTabs() {
 <Tab.Screen name="Add Data" component={AdddataScreen} options={{
 	tabBarLabel: 'Add data',
 	tabBarIcon: ({ color, size }) => (
-  		<Fontawesome5 name="user-plus" color={color} size={size} />
+  		<Fontawesome5 name="plus" color={color} size={size} />
 	),
 }}
 />
@@ -130,8 +133,8 @@ function MyTabs() {
 }}
 />
 
-<Tab.Screen name="ProfilScreen" component={ProfilScreen} options={{
-	tabBarLabel: 'ProfilScreen',
+<Tab.Screen name="Profil pengembang" component={ProfilScreen} options={{
+	tabBarLabel: 'Profil',
 	tabBarIcon: ({ color, size }) => (
   		<Fontawesome5 name="user" color={color} size={size} />
 	),
@@ -155,7 +158,7 @@ const styles = StyleSheet.create({
 
     image1: {
         width: '100%',
-        height: 350,
+        height: 230,
         resizeMode: 'center',
         
     },
